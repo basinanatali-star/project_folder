@@ -1,8 +1,7 @@
 import requests
 import json
-from typing import List, Dict, Any, Union, Optional
+from typing import List, Dict, Any, Union
 from abc import ABC, abstractmethod
-
 
 class VacancyAPI(ABC):
     """Абстрактный класс для работы с API сервисов с вакансиями"""
@@ -98,3 +97,5 @@ if __name__ == "__main__":
 
     # 4. Выводим результаты
     print(vacancies)
+
+
