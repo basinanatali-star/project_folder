@@ -1,16 +1,9 @@
-# This is a sample Python script.
+from src.user_interaction import user_interaction
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    try:
+        user_interaction()
+    except KeyboardInterrupt:
+        print("\n\nПрограмма прервана пользователем")
+    except Exception as e:
+        print(f"\nКритическая ошибка: {e}")
