@@ -13,8 +13,7 @@ def user_interaction() -> None:
     storage = JSONVacancyStorage("my_vacancies.json")
     storage_filter = JSONVacancyStorage("vacancies_filter.json")
 
-    current_vacancies: List[Vacancy] = []  # ← Добавлена аннотация
-    current_source: SourceType = ""
+    current_vacancies: List[Vacancy] = []
 
     print("\n" + "=" * 60)
     print("ПРОГРАММА ДЛЯ ПОИСКА ВАКАНСИЙ НА hh.ru")
